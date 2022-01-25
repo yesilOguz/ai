@@ -2,7 +2,7 @@
 cat and dog classifier with pytorch
 
 In this project, I aimed to classficate to dogs and cats images. I can say pytorch is successful than others.
-You can think accuracy values is wrong but they are right. Always have the same number of correct numbers in the test data.
+You can think accuracy values is wrong but they are true. Always have the same number of correct numbers in the test data.
 
 ![this is an image](https://i.hizliresim.com/cz1te5c.jpg)
 
