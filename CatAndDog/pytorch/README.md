@@ -1,4 +1,4 @@
-#Cat and Dog classifier
+# Cat and Dog classifier
 cat and dog classifier with pytorch
 
 In this project, I aimed to classficate to dogs and cats images. I can say pytorch is successful than others
