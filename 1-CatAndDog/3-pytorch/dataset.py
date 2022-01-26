@@ -7,7 +7,8 @@ class CatAndDog(Dataset):
     def __init__(self, img_file, label_file, transform=None):
         """
         Args:
-            npy_file (string): Path of the trainX.npy file
+            img_file (string): Path of the trainX.npy file
+            label_file (string): Path of the trainY.npy file
             transform (callable, optional): Optional transform to be applied on a sample.
         """
         
