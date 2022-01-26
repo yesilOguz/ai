@@ -53,17 +53,17 @@ while True:
     imPath = input('path of your image: ')
 
     size = (64, 64)
-
-    #open image
-    image = Image.open(imPath)
     
     try:
-        #resize and grayscale image
-        im = np.array((image.convert('L')).resize(size))
+        #open image
+        image = Image.open(imPath)
     except:
         print("there is a problem in the path of the photo")    
         continue
 
+    #resize and grayscale image
+    im = np.array((image.convert('L')).resize(size))
+    
     im = im.reshape(1, im.shape[0]*im.shape[1])
 
     predict = model.predict(im)
