@@ -68,7 +68,6 @@ for i in range(len(catDogTrain)):
         # Calculate accuracy
         correct = 0
         total = 0
-        accuracy = 0
         
         #predict test dataset
         for j in range(len(catDogTest)):
