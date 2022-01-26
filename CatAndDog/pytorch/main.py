@@ -109,13 +109,13 @@ while True:
     try:
         #open image
         image = Image.open(imPath)
-        
-        #resize and grayscale image
-        im = np.array((image.convert('L')).resize(size))
     except Exception as e:
         print("there is a problem in the path of the photo: err: " , e)    
         continue
 
+    #resize and grayscale image
+    im = np.array((image.convert('L')).resize(size))
+    
     flat = im.reshape(im.shape[0]*im.shape[1])
     
     im = Variable(torch.Tensor(flat))
