@@ -22,18 +22,12 @@ def getArrays(noPath, noNames, yesPath, yesNames):
 
     for i in noNames:
         img = np.asarray((Image.open(noPath+i).convert('L')).resize(size))
-        
-        # compress the image between 0 and 1. add channel
-        # cnns want 3D images
         ImgArr.append(img)
 
         labelArr.append(np.asarray([1, 0]))# no
         
     for i in yesNames:
         img = np.asarray((Image.open(yesPath+i).convert('L')).resize(size))
-        
-        # compress the image between 0 and 1. add channel
-        # cnns want 3D images
         ImgArr.append(img)
 
         labelArr.append(np.asarray([0, 1]))# yes
